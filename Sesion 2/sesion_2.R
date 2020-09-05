@@ -26,7 +26,7 @@ mean(trees$Volume)
 #mediana	
 median(trees$Height, na.rm = TRUE)
 
-#para trabajar la media no hay una formula nativa, por lo que si son pocos datos podemos hacerlo por observación 
+#para trabajar la moda no hay una formula nativa, por lo que si son pocos datos podemos hacerlo por observación 
 data1<- c(5, 4, 2, 6, 2, 1, 3, 4, 6, 7, 4)
 #La función table () devuelve una tabla con el número de diferentes valores de x (típicamente para enteros o	factores)
 
@@ -92,6 +92,7 @@ kurtosi(trees$Girth)
 
 skew(trees$Height)
 kurtosi(trees$Height)
+mardia(trees$Height)
 plot(trees$Height)
 
 
@@ -102,4 +103,4 @@ library(moments)
 
 skewness(trees$Girth)
 kurtosis(trees$Height)
-
+         
